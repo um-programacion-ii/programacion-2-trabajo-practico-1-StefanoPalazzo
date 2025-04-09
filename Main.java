@@ -14,7 +14,7 @@ public class Main {
         vehiculos.add(new Auto("CCC789", "Toyota", 2020, 500, 4));
 
         VehiculoPrinter printer = new VehiculoPrinter();
-
+        System.out.println("=== LISTADO DE VEHÍCULOS ===");
         for (Vehiculo v : vehiculos) {
             printer.imprimirInformacion(v);
         }
