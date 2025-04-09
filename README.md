@@ -1,6 +1,57 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/-JQrLgaz)
 # 🧠 Trabajo Práctico: Sistema de Gestión de Vehículos (Java + SOLID + GitHub)
 
+## ✅ Información del Proyecto
+
+### Alumno
+**Nombre y Apellido:** Stefano Palazzo
+
+---
+
+### 🛠️ Requisitos Previos
+- **Java Development Kit (JDK)** versión 17 o superior
+- **IDE recomendado:** IntelliJ IDEA, Eclipse o NetBeans
+- **Sistema operativo:** Windows, macOS o Linux
+
+---
+
+### 🚀 Instrucciones para Ejecutar el Proyecto
+
+1. Clonar o descargar este repositorio en tu computadora.
+2. Abrir el proyecto en tu IDE preferido.
+3. Asegurarse de que el JDK esté correctamente configurado en el proyecto.
+4. Navegar a la clase `Main.java` ubicada en `src/Main.java`.
+5. Ejecutar el método `main` desde la clase `Main`.
+
+---
+
+### 🧪 Compilación y Ejecución por Consola (opcional)
+
+Si querés compilar y ejecutar el proyecto desde la terminal:
+
+```bash
+cd ruta/al/repositorio
+javac -d out src/*.java
+java -cp out Main
+```
+
+> Asegurate de estar ubicado en la carpeta raíz del proyecto al ejecutar estos comandos.
+
+---
+
+### 📌 Ejemplo de Uso
+
+Al ejecutar la aplicación, se mostrará por consola la información de los vehículos cargados en el sistema. Por ejemplo:
+
+```
+=== LISTADO DE VEHÍCULOS ===
+Vehículo - Patente: AAA123 | Marca: Ford | Año: 2010 | Carga: 1500.0 kg
+Camión - Patente: BBB456 | Marca: Scania | Año: 2015 | Carga: 8000.0 kg | Acoplado: Sí
+Auto - Patente: CCC789 | Marca: Toyota | Año: 2020 | Carga: 500.0 kg | Pasajeros: 4
+```
+
+---
+
 ## 📌 Objetivo General
 
 Desarrollar una aplicación en Java para gestionar vehículos de una empresa, aplicando los principios de programación orientada a objetos y los **primeros tres principios SOLID**:  
