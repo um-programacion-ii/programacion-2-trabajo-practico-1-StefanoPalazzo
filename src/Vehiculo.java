@@ -4,9 +4,9 @@ public class Vehiculo {
     private String patente;
     private String marca;
     private int anio;
-    private double capacidadCargaKg;
+    private int capacidadCargaKg;
 
-    public Vehiculo(String patente, String marca, int anio, double capacidadCargaKg) {
+    public Vehiculo(String patente, String marca, int anio, int capacidadCargaKg) {
         if (patente == null || patente.isEmpty()) throw new IllegalArgumentException("Patente inválida");
         if (anio < 1900 || anio > java.time.Year.now().getValue()) throw new IllegalArgumentException("Año inválido");
         if (capacidadCargaKg < 0) throw new IllegalArgumentException("Capacidad de carga inválida");
@@ -26,14 +26,6 @@ public class Vehiculo {
     public int getAnio() { return anio; }
     public void setAnio(int anio) { this.anio = anio; }
 
-    public double getCapacidadCargaKg() { return capacidadCargaKg; }
-    public void setCapacidadCargaKg(double capacidadCargaKg) { this.capacidadCargaKg = capacidadCargaKg; }
-
-    public void mostrarInformacion() {
-        System.out.println("Vehículo:");
-        System.out.println("  Patente: " + patente);
-        System.out.println("  Marca: " + marca);
-        System.out.println("  Año: " + anio);
-        System.out.println("  Capacidad de Carga: " + capacidadCargaKg + " kg");
-    }
+    public int getCapacidadCargaKg() { return capacidadCargaKg; }
+    public void setCapacidadCargaKg(int capacidadCargaKg) { this.capacidadCargaKg = capacidadCargaKg; }
 }
