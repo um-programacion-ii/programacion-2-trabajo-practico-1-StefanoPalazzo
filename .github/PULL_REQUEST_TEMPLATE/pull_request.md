@@ -21,7 +21,7 @@ Milestone: `Etapa X - ...`
 
 - [ ] La funcionalidad implementada cumple con la consigna
 - [ ] El código compila correctamente
-- [ ] El código fue probado desde `src.Main` u otra clase de prueba
+- [ ] El código fue probado desde `Main` u otra clase de prueba
 - [ ] Este PR está asociado a un Issue con milestone y project
 - [ ] Se siguieron los principios SOLID correspondientes
 - [ ] El código fue revisado por otro miembro del equipo (si aplica)

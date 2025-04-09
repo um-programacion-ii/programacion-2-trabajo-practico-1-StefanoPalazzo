@@ -54,6 +54,6 @@ body:
       description: Marcá los puntos que se deben cumplir para dar la tarea como terminada
       options:
         - label: La tarea está implementada correctamente
-        - label: Se probó la funcionalidad en `src.Main` o test correspondiente
+        - label: Se probó la funcionalidad en `Main` o test correspondiente
         - label: Se creó una rama específica para esta tarea
         - label: Se abrió un Pull Request que menciona este Issue
