@@ -2,8 +2,10 @@ import src.Auto;
 import src.Camion;
 import src.Vehiculo;
 import src.service.VehiculoPrinter;
+import src.service.BuscarPorPatente;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,5 +20,9 @@ public class Main {
         for (Vehiculo v : vehiculos) {
             printer.imprimirInformacion(v);
         }
+
+        BuscarPorPatente bs = new BuscarPorPatente();
+        bs.buscarVehiculo(vehiculos);
+
     }
 }
