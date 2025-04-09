@@ -1,4 +1,7 @@
+package src;
+
 import src.Vehiculo;
+import src.service.VehiculoPrinter;
 
 public class Main {
     public static void main(String[] args) {
@@ -6,10 +9,11 @@ public class Main {
         Vehiculo v2 = new Vehiculo("DEF456", "Ford", 2018, 800);
         Vehiculo v3 = new Vehiculo("GHI789", "Renault", 2022, 600);
 
-        v1.mostrarInformacion();
+        VehiculoPrinter printer = new VehiculoPrinter();
+        printer.imprimirInformacion(v1);
         System.out.println();
-        v2.mostrarInformacion();
+        printer.imprimirInformacion(v2);
         System.out.println();
-        v3.mostrarInformacion();
+        printer.imprimirInformacion(v3);
     }
 }
