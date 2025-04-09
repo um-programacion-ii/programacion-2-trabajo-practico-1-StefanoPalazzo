@@ -29,7 +29,7 @@ El trabajo está dividido en etapas. Cada etapa deberá registrarse como un **Mi
 ### Etapa 1: Clases Básicas
 - Crear la clase `Vehiculo` con atributos: `patente`, `marca`, `año`, `capacidadCargaKg`.
 - Agregar constructor, getters/setters y método `mostrarInformacion()`.
-- Crear la clase `src.Main` que cree e imprima al menos 3 vehículos.
+- Crear la clase `Main` que cree e imprima al menos 3 vehículos.
 
 ### Etapa 2: Aplicar SRP
 - Extraer la responsabilidad de impresión a una nueva clase `VehiculoPrinter`.
