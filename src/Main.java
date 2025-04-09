@@ -8,20 +8,16 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+        ArrayList<Vehiculo> vehiculos = new ArrayList<>();
+
+        vehiculos.add(new Vehiculo("AAA123", "Ford", 2010, 1500));
+        vehiculos.add(new Camion("BBB456", "Scania", 2015, 8000, true));
+        vehiculos.add(new Auto("CCC789", "Toyota", 2020, 500, 4));
+
         VehiculoPrinter printer = new VehiculoPrinter();
-
-        Vehiculo vehiculo = new Vehiculo("AAA123", "Toyota", 2010, 1000);
-        Camion camion = new Camion("CAM456", "Volvo", 2015, 5000, true);
-        Auto auto = new Auto("AUTO789", "Ford", 2022, 350, 4);
-
-        List<Vehiculo> vehiculos = new ArrayList<>();
-        vehiculos.add(vehiculo);
-        vehiculos.add(camion);
-        vehiculos.add(auto);
 
         for (Vehiculo v : vehiculos) {
             printer.imprimirInformacion(v);
-            System.out.println("------------");
         }
     }
 }
