@@ -9,6 +9,8 @@ public class Main {
         Vehiculo v2 = new Vehiculo("DEF456", "Ford", 2018, 800);
         Vehiculo v3 = new Vehiculo("GHI789", "Renault", 2022, 600);
         Auto auto = new Auto("POP999", "Peugeot", 2022, 300, 5);
+        Camion camion = new Camion("JFK111", "Scania", 2023, 3000, true);
+
 
 
         VehiculoPrinter printer = new VehiculoPrinter();
@@ -19,5 +21,6 @@ public class Main {
         printer.imprimirInformacion(v3);
         System.out.println();
         printer.imprimirInformacion(auto);
+        printer.imprimirInformacion(camion);
     }
 }

@@ -1,7 +1,7 @@
 package src.service;
 import src.Vehiculo;
 import src.Auto;
-
+import src.Camion;
 
 
 public class VehiculoPrinter {
@@ -12,8 +12,13 @@ public class VehiculoPrinter {
         System.out.println("  Marca: " + vehiculo.getMarca());
         System.out.println("  Año: " + vehiculo.getAnio());
         System.out.println("  Capacidad de Carga: " + vehiculo.getCapacidadCargaKg() + " kg");
-        if (vehiculo instanceof Auto auto) {
+        if (vehiculo instanceof Auto) {
+            Auto auto = (Auto) vehiculo;
             System.out.println("  Pasajeros: " + auto.getCantidadPasajeros());
+        }
+        if (vehiculo instanceof Camion) {
+            Camion camion = (Camion) vehiculo;
+            System.out.println("  Tiene acoplado: " + (camion.isTieneAcoplado() ? "Sí" : "No"));
         }
     }
 }
